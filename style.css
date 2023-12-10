@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family:'Outfit', sans-serif ;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+.mycard{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    border-radius: 5%;
+    padding: 20px;
+    box-shadow: 10px 10px 2px;   
+
+}
+.myimage{
+    border-radius: 5%;
+}
+.myparagraph{
+    font-size: 18px;
+    font-weight: 100;
+    color: hsl(215, 51%, 70%);
+}
+p{
+    font-family:'Outfit', sans-serif ;
+    color: hsl(215, 51%, 70%);
+}
+
+.Twogrid
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* bottom:10px; */
+}
+hr{
+    height:1px;
+    width: 100%;
+    border-width:0px;
+    background-color: hsl(215, 32%, 27%);
+}
+.minigrid{
+    display: flex;
+    justify-content:flex-start;
+    
+}
+h1:hover,span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+span{
+    color: white; 
+    font-weight: 600;
+}
+.layer
+{
+    transition: .5s ease;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 320px;
+    width: 320px;
+    margin: auto;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imageContainer{
+    position: relative;
+}
+
+.imageContainer:hover .layer{
+    opacity: 0.75;
+}
+
+@media screen and (min-width:375px) {
+    .mycard{scale: 1.2; }
+    
+}
+@media screen and (min-width:1440px) {
+    .mycard{scale: 1.0}; }
